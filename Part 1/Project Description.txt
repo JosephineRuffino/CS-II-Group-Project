@@ -1,0 +1,37 @@
+Project Description:  
+
+The selected program will perform the necessary functions to run an Information Technology Service Business. The Business will offer Services and Products for either Residential or Commercial customers, then it will create invoices for the respective Services or Parts sold. Additionally, the business will have different employees, for example Technicians, Engineers, Secretaries, etc. Which will also perform payroll for them.  
+
+In the following paragraphs there will include how the program will cover the necessary functions:  
+
+Main Menu 
+
+The program will require a login before can be accessed for security reasons, once the right password is typed then you gain access to the Main Menu where you will have access to the following areas: “Customers”, “Products”, “Services”, “Invoices”, “Employees" and “Payroll” 
+
+Customers 
+
+This program area will implement an array to store customers and it will allow the following actions “Add”, “Search” and “delete” Customers. In order to create new customers will use variable Type to determine the necessary subclass either “residential” or “commercial”, then it will use the following variables to complete the customer: Name, Last Name, Address and Phone number. For searching customers, you will either use name and last name or the type of customer.  
+
+Services 
+
+This area will also implement an array to allow “Add”, “edit” and “delete” Services. To create new services, it will use variables for the following data: type of service and charge for the service. Some examples of services that can be created are: virus removal, screen replacement, system reinstall, etc.  
+
+Products 
+
+Products class will initialize an Array that will allow employees to “Search”, “Add”, and “Delete” products that are stored in the array.  Each product will contain the variables:  name, quantity, ID, and price.  To search products, the user can use the ID variable to find them.  However, to add/delete a product, all variables should be included to ensure accuracy.  A list of products stored in the array can also be printed to display the current inventory. 
+
+Invoices  
+
+This class will allow user to “Create”, “edit” and “delete” Invoices. In order to make that happen there will be variables for current tax and an array to store Invoices. Additionally, the methods implemented in this class will allow to borrow data from “Customers”, “Products” and “Services” in order to generate the required invoices. Furthermore, it contains methods that will allow to print invoices and reports. 
+
+Employees  
+
+The employees' class will allow the user to “Add”, “Search” and “Delete” employees from the staff array. Each employee's profile will contain their first and last name, address, phone number, unique staff identification number, salary, and position (engineer, technician, etc.). This information will be stored in an array to allow the user to add, edit, search, list, and delete any employees.  
+
+Payroll 
+
+This class will allow the user to create a pay stub for each employee. It will inherit each employee's information from the Employees class. The user will be able to “Search”, “Add”, and “Delete” any pay stub. The user will be able to search a pay stub using the pay stub identification number. However, to add/delete a pay stub, all variables will need to be entered to ensure accuracy. The user will also be able to calculate each employees' monthly pay using their salary. The user will also be able to print a pay stub that will contain the employee’s full name and identification number, pay period, date, and amount paid.  
+
+Example:   
+
+	When starting the program, you are first prompted to login.  There is one single logon to access the program, so you enter either a correct or incorrect password, not a unique password tied to a unique username.  If you enter the wrong password, you are prompted to try again.  Once you enter the correct password to login, you are then taken to the main menu.  Main menu will display buttons labeled "Customers", "Invoices", "Products", "Services", "Employees", and "Payroll" that correspond to specific actions.  For example, if you select "Products", you are then taken to the Products menu that allows you to either search/add/delete/list products that are stored in an array called "Inventory".  Selecting "list" will print out all products stored within Inventory, along with their details.  Another possible action from the main menu could be to print Invoice reports. This can be done by selecting "Invoices" from the main menu.  Once taken to the Invoices menu, you would then select the option to "create report" to provide a report containing the details stored within the Invoices array. 
