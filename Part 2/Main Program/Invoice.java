@@ -10,7 +10,7 @@ public class Invoice {
 	
 	public Invoice (int InvoiceID, int QuantityP, Customer c, Service s, Product p) //method if user wants to have both services and products 
 	{
-		//conntruct invoice variables 
+		//construct invoice variables
 		this.InvoiceID = InvoiceID;
 		this.QuantityP = QuantityP;
 		c1 = c;
@@ -20,9 +20,9 @@ public class Invoice {
 		ServiceCharge = s1.getServiceCharge(); //get services charge 
 		ProductPrice = p1.getProductPrice(); // get product price 
 		
-		total = (ServiceCharge + (ProductPrice * QuantityP)) * 0.05125;  //calculates total cost (tax) 
+		total = (ServiceCharge + (ProductPrice * QuantityP)) * 0.05125;  //calculate total cost (tax)
 		 
-		totalCharge = (ServiceCharge + (ProductPrice * QuantityP)) + total; //calcualte total charge 
+		totalCharge = (ServiceCharge + (ProductPrice * QuantityP)) + total; //calculate total charge 
 		
 	}
 	
@@ -34,9 +34,9 @@ public class Invoice {
 		c1 = c;
 		p1 = p;
 		
-		ProductPrice = p1.getProductPrice(); //get procuct price 
+		ProductPrice = p1.getProductPrice(); //get product price
 		
-		total = (ProductPrice * QuantityP) * 0.05125; //calcualte tax 
+		total = (ProductPrice * QuantityP) * 0.05125; //calculate tax 
 		
 		totalCharge = (ProductPrice * QuantityP) + total; //add it to total charge 
 	}
