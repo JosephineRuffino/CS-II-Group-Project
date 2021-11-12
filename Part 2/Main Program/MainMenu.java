@@ -74,7 +74,7 @@ public class MainMenu {
 		
 		while (control == true)
 		{
-			System.out.println("Welcome to IT SERVICE MANAGEMENT");
+			System.out.println("Welcome to IT SERVICE MANAGEMENT"); //display main menu 
 			System.out.println("(1) Costumers");
 			System.out.println("(2) Products");
 			System.out.println("(3) Services");
