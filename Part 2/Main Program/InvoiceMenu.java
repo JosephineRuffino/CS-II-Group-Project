@@ -79,7 +79,7 @@ public class InvoiceMenu {
 						Scanner qp = new Scanner (System.in);
 						QuantityP = qp.nextInt(); //gets the quantity of items sold 
 			
-						if (QuantityP == 0)
+						if (QuantityP <= 0)
 						{
 							System.out.println("you need to input at least 1");
 						}
