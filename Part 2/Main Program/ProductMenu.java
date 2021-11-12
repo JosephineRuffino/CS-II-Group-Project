@@ -35,7 +35,12 @@ public class ProductMenu {
 					System.out.println("Enter product ID: ");
 					Scanner ID=new Scanner(System.in);
 					productID=ID.nextInt();
+				//Convert ID to string in order to count digits
+					String digits = Integer.toString(productID);
 					
+				//productID needs to be 4 digits					
+					if (digits.length()==4)
+					{	
 					System.out.println("Enter product name: ");
 					Scanner n=new Scanner(System.in);
 					productName=n.nextLine();
@@ -58,15 +63,22 @@ public class ProductMenu {
 					Scanner o=new Scanner(System.in);
 					YesNo=o.nextLine();
 					
-					if (YesNo.intern()=="N")
+					if (YesNo.intern()=="N" || YesNo.intern() == "n")
 						{
 						c1=false;
 						}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 						{
 						System.out.println("Wrong selection, try again.\n");
 						c1=false;
 						}
+					}
+					
+				//Error and loop back if ID is not 4 digits					
+					else if (digits.length()>4 || digits.length()<4)
+					{	
+					System.out.println("ID needs to be 4 numbers.  Please try again.");
+					}
 				}
 			}
 			else if (Option==2)
@@ -100,11 +112,11 @@ public class ProductMenu {
 					Scanner o=new Scanner(System.in);
 					YesNo=o.nextLine();
 					
-						if (YesNo.intern()=="N")
+						if (YesNo.intern()=="N" || YesNo.intern() == "n")
 							{
 							c2=false;
 							}
-						else if (YesNo.intern() != "Y")
+						else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 							{
 							System.out.println("Wrong selection, try again.\n");
 							c2=false;
@@ -128,11 +140,11 @@ public class ProductMenu {
 					Scanner o=new Scanner(System.in);
 					YesNo=o.nextLine();
 					
-						if (YesNo.intern()=="N")
+						if (YesNo.intern()=="N" || YesNo.intern() == "n")
 							{
 							c3=false;
 							}
-						else if (YesNo.intern() != "Y")
+						else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 							{
 							System.out.println("Wrong selection, try again\n");
 							c3=false;
@@ -162,11 +174,11 @@ public class ProductMenu {
 					Scanner o=new Scanner(System.in);
 					YesNo=o.nextLine();
 					
-						if (YesNo.intern()=="N")
+						if (YesNo.intern()=="N" || YesNo.intern() == "n")
 							{
 							c5=false;
 							}
-						else if (YesNo.intern() != "Y")
+						else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 							{
 							System.out.println("Wrong selection, try again\n");
 							c5=false;
