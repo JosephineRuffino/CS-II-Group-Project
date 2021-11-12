@@ -59,7 +59,7 @@ public class CustomerMenu {
 	                		Scanner in = new Scanner(System.in);
 	                		streetNumber = in.nextInt();
 	                
-	                		System.out.println("Enter the Customer's phone number (6 digits");
+	                		System.out.println("Enter the Customer's phone number (9 digits");
 	                		Scanner phone = new Scanner(System.in);
 	                		phoneNumber = phone.nextLong();
 					
@@ -116,7 +116,7 @@ public class CustomerMenu {
 					Scanner in = new Scanner(System.in);
 	               	 		streetNumber = in.nextInt();
 	                
-					System.out.println("Enter new phone number: ");
+					System.out.println("Enter new phone number(9 digits): ");
 					Scanner phone = new Scanner(System.in);
 	                		phoneNumber = phone.nextLong();
 					
