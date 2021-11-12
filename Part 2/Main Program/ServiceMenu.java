@@ -121,7 +121,7 @@ public class ServiceMenu {
 			}
 			else if (Option == 3)
 			{
-				while (c3 == true)
+				while (c3 == true) //deletes a service 
 				{
 					System.out.println("");
 					System.out.println("DELETE SERVICE\n");
@@ -147,7 +147,7 @@ public class ServiceMenu {
 					}
 				}
 			}
-			else if (Option == 4)
+			else if (Option == 4) //prints all services 
 			{
 				for (Object key : ServicesData.keySet())
 				{
@@ -158,7 +158,7 @@ public class ServiceMenu {
 			}
 			else if (Option == 5)
 			{
-				while (c5 == true)
+				while (c5 == true) //search a service and prints it 
 				{
 					System.out.println("");
 					System.out.println("SEARCH SERVICE\n");
@@ -183,11 +183,11 @@ public class ServiceMenu {
 					}
 				}
 			}
-			else if (Option == 6)
+			else if (Option == 6) //go back to main menu 
 			{
 				control = false;
 			}
-			else if (Option != 1 || Option != 2 || Option != 3 || Option != 4 || Option != 5)
+			else if (Option != 1 || Option != 2 || Option != 3 || Option != 4 || Option != 5) //promt the user to enter a correct choice 
 			{
 				System.out.println("Wrong selection, Try again\n");
 			}
