@@ -1,9 +1,9 @@
 public class Customer{
-	
+    //create variables
     private int customerId,streetNumber;
-	private long phoneNumber;
+    private long phoneNumber;
     private String fName, lName, streetName;
-  
+  		//construct the customer class 
 		public Customer(int customerId, String fName, String lName, int streetNumber, String streetName, long phoneNumber){
 		
 			this.customerId =customerId;
@@ -15,7 +15,7 @@ public class Customer{
 		}
 		
 		public void modify (String fName, String lName, int streetNumber, String streetName, long phoneNumber)
-		{
+		{ //construct a customer after new inputs are entered 
 			this.fName =fName;
 			this.lName= lName;
 			this.streetNumber= streetNumber;
@@ -24,7 +24,7 @@ public class Customer{
 		}
 
 		public String toString()
-		{
+		{ //print the cutsomer's information in a sentence 
 			return "Customer Id: "+ customerId + "\nName: "+ fName+ " "+ lName+ "\nAdress: "+ streetNumber+ " "+ streetName + "\nPhone Number:  " + phoneNumber;
 		}
 	}
