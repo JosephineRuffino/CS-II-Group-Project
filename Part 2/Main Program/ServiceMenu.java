@@ -37,7 +37,12 @@ public class ServiceMenu {
 					System.out.println("enter service ID (4 numbers):");
 					Scanner id = new Scanner(System.in);
 					ServiceID = id.nextInt();
-			
+				//Convert ID to string in order to count digits
+					String digits = Integer.toString(ServiceID);
+					
+				//productID needs to be 4 digits					
+					if (digits.length()==4)
+					{			
 					System.out.println("enter Service Description (ex. Computer repair):");
 					Scanner type = new Scanner(System.in);
 					ServiceType = type.nextLine();
@@ -56,14 +61,21 @@ public class ServiceMenu {
 			
 			
 			
-					if (YesNo.intern() == "N")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n")
 					{
 						c1 = false;
 					}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c1 = false;
+					}
+				}
+					
+				//Error and loop back if ID is not 4 digits					
+					else if (digits.length()>4 || digits.length()<4)
+					{	
+						System.out.println("ID needs to be 4 numbers.  Please try again.");
 					}
 				}
 			}
@@ -94,11 +106,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n")
 					{
 						c2 = false;
 					}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c2 = false;
@@ -124,11 +136,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n")
 					{
 						c3 = false;
 					}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c3 = false;
@@ -160,11 +172,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n")
 					{
 						c5 = false;
 					}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c5 = false;
