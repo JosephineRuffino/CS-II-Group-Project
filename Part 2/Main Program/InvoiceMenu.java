@@ -159,11 +159,11 @@ public class InvoiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n")
 					{
 						c2 = false;
 					}
-					else if (YesNo.intern() != "Y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c2 = false;
