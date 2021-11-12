@@ -32,7 +32,7 @@ public class ProductMenu {
 				{
 					System.out.println("");
 					System.out.println("Create new product\n");
-					System.out.println("Enter product ID: ");
+					System.out.println("Enter product ID (4 numbers): ");
 					Scanner ID=new Scanner(System.in);
 					productID=ID.nextInt();
 				        //Convert ID to string in order to count digits
