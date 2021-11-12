@@ -32,7 +32,12 @@ public class InvoiceMenu {
 				System.out.println("Invoice ID: ");
 				Scanner id = new Scanner (System.in);
 				InvoiceID = id.nextInt();
-			
+			//Convert ID to string in order to count digits
+				String digits = Integer.toString(InvoiceID);
+					
+			//productID needs to be 4 digits					
+				if (digits.length()==4)
+				{			
 				System.out.println("Customer ID: ");
 				Scanner cid = new Scanner (System.in);
 				CustomerID = cid.nextInt();
@@ -128,12 +133,14 @@ public class InvoiceMenu {
 			
 							System.out.println("Invoice Created!\n");
 							c1 = false;
+					}
 				}
-				else
-				{
-					System.out.println("Wrong input, try again\n");
+			//Error and loop back if ID is not 4 digits
+				else if (digits.length()>4 || digits.length()<4)
+					{
+					System.out.println("ID needs to be 4 numbers. Please try again.");
+					}
 				}
-			}
 		}
 		else if (option == 2)
 		{
