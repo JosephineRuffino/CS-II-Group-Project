@@ -61,11 +61,11 @@ public class ServiceMenu {
 			
 			
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c1 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c1 = false;
@@ -106,11 +106,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c2 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c2 = false;
@@ -136,11 +136,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c3 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c3 = false;
@@ -172,11 +172,11 @@ public class ServiceMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c5 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c5 = false;
