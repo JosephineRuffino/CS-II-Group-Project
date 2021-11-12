@@ -1,4 +1,4 @@
-public class Customer{
+public class Customer{//test
 	
     private int customerId,streetNumber;
 	private long phoneNumber;
