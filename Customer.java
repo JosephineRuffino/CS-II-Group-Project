@@ -15,7 +15,7 @@ public class Customer{//test
 		}
 		
 		public void modify (String fName, String lName, int streetNumber, String streetName, long phoneNumber)
-		{
+		{ //construct new user inputs 
 			this.fName =fName;
 			this.lName= lName;
 			this.streetNumber= streetNumber;
@@ -29,4 +29,3 @@ public class Customer{//test
 		}
 	}
 	
-Hiiii 
