@@ -54,7 +54,7 @@ public class ProductMenu {
 					productPrice=pr.nextDouble();
 					
 					//Creates product object from 'product' class
-					Product p=new Product(productID, productName, productQuantity, productPrice);
+					Product p=new Product(productID, productName, productQuantity, productPrice); 
 					//Add to Map
 					ProductsData.put(productID, p);
 					 
