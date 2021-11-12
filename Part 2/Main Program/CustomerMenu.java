@@ -45,23 +45,23 @@ public class CustomerMenu {
 				{			
 					System.out.println("Enter the Customer's first name");
 					Scanner name = new Scanner(System.in);
-	                fName = name.nextLine();
+	               			fName = name.nextLine();
 	                
-	                System.out.println("Enter the Customer's last name");
-	                Scanner last = new Scanner(System.in);
-	                lName = last.nextLine();
+	               			System.out.println("Enter the Customer's last name");
+	                		Scanner last = new Scanner(System.in);
+	                		lName = last.nextLine();
 	                
-	                System.out.println("Enter the Customer's street name");
-	                Scanner st = new Scanner(System.in);
-	                streetName = st.nextLine();
+	                		System.out.println("Enter the Customer's street name");
+	                		Scanner st = new Scanner(System.in);
+	                		streetName = st.nextLine();
 	                
-	                System.out.println("Enter the street number");
-	                Scanner in = new Scanner(System.in);
-	                streetNumber = in.nextInt();
+	                		System.out.println("Enter the street number");
+	                		Scanner in = new Scanner(System.in);
+	                		streetNumber = in.nextInt();
 	                
-	                System.out.println("Enter the Customer's phone number (6 digits");
-	                Scanner phone = new Scanner(System.in);
-	                phoneNumber = phone.nextLong();
+	                		System.out.println("Enter the Customer's phone number (6 digits");
+	                		Scanner phone = new Scanner(System.in);
+	                		phoneNumber = phone.nextLong();
 		
 					Customer c = new Customer(customerId, fName, lName, streetNumber,  streetName, phoneNumber);
 					CustomersData.put(customerId, c);
@@ -71,13 +71,11 @@ public class CustomerMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-			
-			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c1 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c1 = false;
@@ -102,24 +100,24 @@ public class CustomerMenu {
 					
 					System.out.println("Enter new first name: ");
 					Scanner name = new Scanner(System.in);
-	                fName = name.nextLine();
+	               		 	fName = name.nextLine();
 					
 					System.out.println("Enter new last name: ");
 					Scanner last = new Scanner(System.in);
-	                lName = last.nextLine();
+	                		lName = last.nextLine();
 	                
 	                
 					System.out.println("Enter new street name: ");
 					Scanner st = new Scanner(System.in);
-	                streetName = st.nextLine();
+	                		streetName = st.nextLine();
 					
 					System.out.println("Enter new street number: ");
 					Scanner in = new Scanner(System.in);
-	                streetNumber = in.nextInt();
+	               	 		streetNumber = in.nextInt();
 	                
 					System.out.println("Enter new phone number: ");
 					Scanner phone = new Scanner(System.in);
-	                phoneNumber = phone.nextLong();
+	                		phoneNumber = phone.nextLong();
 					
 					c.modify(fName, lName, streetNumber, streetName, phoneNumber);
 					
@@ -127,11 +125,11 @@ public class CustomerMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c2 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c2 = false;
@@ -155,11 +153,11 @@ public class CustomerMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c3 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c3 = false;
@@ -191,11 +189,11 @@ public class CustomerMenu {
 					Scanner o = new Scanner(System.in);
 					YesNo = o.nextLine();
 			
-					if (YesNo.intern() == "N" || YesNo.intern() == "n")
+					if (YesNo.intern() == "N" || YesNo.intern() == "n" || YesNo.intern() == "Y" || YesNo.intern() == "y")
 					{
 						c5 = false;
 					}
-					else if (YesNo.intern() != "Y" || YesNo.intern() != "y")
+					else if (YesNo.intern() != "Y" || YesNo.intern() != "y" || YesNo.intern() != "N" || YesNo.intern() != "n")
 					{
 						System.out.println("Wrong selection, Try again\n");
 						c5 = false;
