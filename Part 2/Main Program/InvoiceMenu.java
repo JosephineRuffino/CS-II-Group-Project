@@ -6,23 +6,18 @@ public class InvoiceMenu {
 	{
 		int option, InvoiceID, CustomerID, ProductID, ServiceID, QuantityP = 0, SorP, printInvoice;
 		String YesNo;
-		//double ;
-		boolean control = true, c1 = true, c2 = true, c3 = true, c5 = true, pcontrol = true;
+		boolean control = true, c1 = true, c2 = true, pcontrol = true;
 		
 		while (control == true) 
 		{
 			c1 = true;
 			c2 = true;
-			c3 = true;
-			c5 = true;
 			System.out.println("");
 			System.out.println("INVOICES MENU\n");
 			System.out.println("(1) Create");
-			System.out.println("(2) Modify");
-			System.out.println("(3) Delete");
-			System.out.println("(4) Print Invoice");
-			System.out.println("(5) Search");
-			System.out.println("(6) Main Menu");
+			System.out.println("(2) Delete");
+			System.out.println("(3) Print Invoice");
+			System.out.println("(4) Main Menu");
 			System.out.println("Type the number where you want to go:");
 			Scanner num = new Scanner(System.in);
 			option = num.nextInt();
@@ -113,7 +108,7 @@ public class InvoiceMenu {
 						Scanner qp = new Scanner (System.in);
 						QuantityP = qp.nextInt();
 			
-						if (QuantityP == 0)
+						if (QuantityP <= 0)
 						{
 							System.out.println("you need to input at least 1");
 						}
@@ -142,11 +137,33 @@ public class InvoiceMenu {
 		}
 		else if (option == 2)
 		{
+			while (c2 == true)
+				{
+					System.out.println("");
+					System.out.println("DELETE INVOICE\n");
+					System.out.println("enter Invoice ID");
+					Scanner id = new Scanner(System.in);
+					InvoiceID = id.nextInt();
+			
+					InvoicesData.remove(InvoiceID);
+			
+					System.out.println("Invoice Deleted!\n");
+					System.out.println("do you want to delete another Service? (Y,N)");
+					Scanner o = new Scanner(System.in);
+					YesNo = o.nextLine();
+			
+					if (YesNo.intern() == "N")
+					{
+						c2 = false;
+					}
+					else if (YesNo.intern() != "Y")
+					{
+						System.out.println("Wrong selection, Try again\n");
+						c2 = false;
+					}
+				}
 		}
 		else if (option == 3)
-		{
-		}
-		else if (option == 4)
 		{
 			System.out.println("PRINT INVOICE\n");
 			System.out.println("Invoice ID: ");
@@ -158,7 +175,7 @@ public class InvoiceMenu {
 			System.out.println("\n" + value + "\n");
 			System.out.println("__________________________________");	
 		}
-		else if (option == 6)
+		else if (option == 4)
 		{
 			control = false;
 		}
