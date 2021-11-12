@@ -9,11 +9,11 @@ public class MainMenu {
 		
 		//Customers Data and Menu
 		Map<Integer, Customer> CustomersData = new TreeMap<Integer, Customer>();
-		Customer c1 = new Customer(2001, "John", "Smith",500, "Ave K" , 8173403500);
-		Customer c2 = new Customer(2002, "Mary", "Lane",221,"Main Street", 8003403515);
-		Customer c3 = new Customer(2003, "Noe", "Soto",  132, "Apple", 5053052361);
-		Customer c4 = new Customer(2004, "Beida", "Ortiz",209, "Ave G", 5003403210);
-		Customer c5 = new Customer(2005, "Josephine", "Ruffino", 310,"Ranger", 8063404223);
+		Customer c1 = new Customer(2001, "John", "Smith",500, "Ave K" , 3403500);
+		Customer c2 = new Customer(2002, "Mary", "Lane",221,"Main Street", 3403515);
+		Customer c3 = new Customer(2003, "Noe", "Soto",  132, "Apple", 3052361);
+		Customer c4 = new Customer(2004, "Beida", "Ortiz",209, "Ave G", 3403210);
+		Customer c5 = new Customer(2005, "Josephine", "Ruffino", 310,"Ranger", 3404223);
 		
 		CustomersData.put(2001, c1);
 		CustomersData.put(2002, c2);
