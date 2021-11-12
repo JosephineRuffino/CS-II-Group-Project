@@ -2,12 +2,12 @@ import java.util.*;
 
 public class ProductMenu {
 
-	public void ProductMenu (Map ProductsData)
+	public void ProductMenu (Map ProductsData) // Method requires a Map that is created in the main program
 	{
 		int Option, productID, productQuantity;
 		String productName, YesNo;
 		double productPrice;
-		boolean control = true, c1=true, c2=true, c3=true, c5=true;
+		boolean control = true, c1=true, c2=true, c3=true, c5=true; //Control Variables for all the loop menus
 		
 		while (control==true)
 		{
@@ -15,7 +15,7 @@ public class ProductMenu {
 			c2=true;
 			c3=true;
 			c5=true;
-			System.out.println("PRODUCTS MENU\n");
+			System.out.println("PRODUCTS MENU\n"); //prints product menu 
 			System.out.println("(1) Create");
 			System.out.println("(2) Modify");
 			System.out.println("(3) Delete");
@@ -23,22 +23,22 @@ public class ProductMenu {
 			System.out.println("(5) Search");
 			System.out.println("(6) Main Menu");
 			System.out.println("Type the number where you want to go: ");
-			Scanner num=new Scanner(System.in);
+			Scanner num=new Scanner(System.in); //scanner to get user input for menu 
 			Option=num.nextInt();
 			
 			if (Option==1)
 			{
-				while (c1==true)
+				while (c1==true) //if user chooses 1 it will create a new product 
 				{
 					System.out.println("");
 					System.out.println("Create new product\n");
 					System.out.println("Enter product ID: ");
 					Scanner ID=new Scanner(System.in);
 					productID=ID.nextInt();
-				//Convert ID to string in order to count digits
+				        //Convert ID to string in order to count digits
 					String digits = Integer.toString(productID);
 					
-				//productID needs to be 4 digits					
+				        //productID needs to be 4 digits					
 					if (digits.length()==4)
 					{	
 					System.out.println("Enter product name: ");
@@ -74,7 +74,7 @@ public class ProductMenu {
 						}
 					}
 					
-				//Error and loop back if ID is not 4 digits					
+				        //Error and loop back if ID is not 4 digits					
 					else if (digits.length()>4 || digits.length()<4)
 					{	
 					System.out.println("ID needs to be 4 numbers.  Please try again.");
@@ -83,7 +83,7 @@ public class ProductMenu {
 			}
 			else if (Option==2)
 			{
-				while (c2==true)
+				while (c2==true) //Modify an existing product 
 				{
 					System.out.println("MODIFY PRODUCT\n");
 					System.out.println("Enter product ID: ");
@@ -125,7 +125,7 @@ public class ProductMenu {
 			}
 			else if (Option==3)
 			{
-				while (c3==true)
+				while (c3==true) //Deletes a product 
 				{
 					System.out.println("DELETE PRODUCT\n");
 					System.out.println("Enter product ID");
@@ -151,7 +151,7 @@ public class ProductMenu {
 							}
 				}
 			}
-			else if (Option==4)
+			else if (Option==4) //prints all products 
 			{
 				for (Object key : ProductsData.keySet())
 				{
@@ -161,14 +161,14 @@ public class ProductMenu {
 			}
 			else if (Option==5)
 			{
-				while (c5==true)
+				while (c5==true) //search a product and prints it 
 				{
 					System.out.println("SEARCH PRODUCTS\n");
 					System.out.println("Enter product ID");
 					Scanner id=new Scanner(System.in);
 					productID=id.nextInt();
 					
-					System.out.println("Product: " + ProductsData.get(productID));
+					System.out.println("Product: " + ProductsData.get(productID)); //get Id from ProductsData map 
 					System.out.println("Would you like to search for another product? (Y,N)");
 					
 					Scanner o=new Scanner(System.in);
@@ -185,11 +185,11 @@ public class ProductMenu {
 							}
 				}
 			}
-			else if (Option==6)
+			else if (Option==6) //go back to main menu 
 			{
 				control=false;
 			}
-			else if (Option != 1 || Option != 2 || Option != 3 || Option != 4 || Option != 5)
+			else if (Option != 1 || Option != 2 || Option != 3 || Option != 4 || Option != 5) //promt the user to enter a valid choice 
 			{
 				System.out.println("Wrong selection, try again\n");
 			}
