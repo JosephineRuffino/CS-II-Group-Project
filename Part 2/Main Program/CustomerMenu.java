@@ -166,7 +166,7 @@ public class CustomerMenu {
 					}
 				}
 			}
-			else if (choices == 4) //go back to main menu 
+			else if (choices == 4) //print all customers  
 			{
 				for (Object key : CustomersData.keySet())
 				{
